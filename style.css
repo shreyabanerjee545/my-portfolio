@@ -498,7 +498,12 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto;it init
+git add .
+git commit -m "first upload"
+git branch -M main
+git remote add origin https://github.com/shreyabanerjee545/my-portfolio.git
+git push -u origin main
 }
 
 .project-card {
