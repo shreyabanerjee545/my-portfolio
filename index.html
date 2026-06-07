@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreya Malani | Full Stack Developer Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Shreya<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#skills">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="home" class="hero-section">
+        <div class="hero-watermark">Shreya Banerjee</div>
+        <div class="hero-container">
+            <div class="hero-content reveal-slide-left">
+                <!-- Inline Circular Social Rings -->
+                <div class="hero-social-row">
+                    <a href="https://github.com/shreyabanerjee545" target="_blank" class="hero-social-link"><i class="fab fa-github"></i></a>
+                    <a href="mailto:banerjeeshreya267@gmail.com" class="hero-social-link"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="hero-social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="hero-social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+                <h3>Hi there, I am</h3>
+                <h1>Shreya Banerjee</h1>
+                <p>I'm a <span class="typing-text"></span></p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn">My Portfolio</a>
+                    <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                </div>
+            </div>
+
+            <!-- Profile Photo Container with Interactive Uploader -->
+            <div class="hero-image-container reveal-slide-right">
+                <div>
+                    <div class="profile-card" id="profile-card-trigger">
+                        <div class="profile-photo-wrapper">
+                            <img src="profile.jpeg" alt="Shreya Banerjee" class="profile-photo" id="profile-img-preview">
+                            <div class="profile-edit-overlay">
+                                <i class="fas fa-camera"></i>
+                                <span>Change Photo</span>
+                            </div>
+                        </div>
+                        <div class="profile-glow"></div>
+                    </div>
+                    <input type="file" id="profile-upload" accept="image/*" style="display: none;">
+                    <button id="profile-reset" class="profile-reset-btn" style="display: none;">Reset to Default</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section reveal-on-scroll">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid-themed">
+            <!-- Left Side: Portrait Photo Card -->
+            <div class="about-img-box">
+                <img src="profile.jpeg" alt="Shreya Banerjee">
+            </div>
+            <!-- Right Side: Biography & Key Data Grid -->
+            <div class="about-content-box">
+                <h3>Hi There</h3>
+                <p>I am Shreya Banerjee, a passionate and dedicated Web Developer focused on building modern, responsive, and user-friendly websites. Highly skilled in HTML, CSS, and JavaScript, I excel at turning abstract ideas into robust digital experiences.</p>
+                <p>I enjoy writing clean, efficient code and improving end-user experiences through creative problem solving. I am always eager to learn new technologies, grow as a developer, and work on real-world projects with the ultimate goal of becoming a professional full stack developer.</p>
+                
+                <div class="about-info-grid">
+                    <div class="about-info-item"><strong>Name:</strong> Shreya Banerjee</div>
+                    <div class="about-info-item"><strong>Email:</strong> <a href="mailto:banerjeeshreya267@gmail.com">banerjeeshreya267...</a></div>
+                    <div class="about-info-item"><strong>Education:</strong> Bachelor of CSE</div>
+                    <div class="about-info-item"><strong>Location:</strong> Durgapur, India</div>
+                    <div class="about-info-item"><strong>GitHub:</strong> <a href="https://github.com/shreyabanerjee545" target="_blank">shreyabanerjee545</a></div>
+                    <div class="about-info-item"><strong>Strengths:</strong> Leadership, Creativity</div>
+                </div>
+                
+                <div class="about-extra-info">
+                    <strong>Extra-Curricular:</strong> Organizing academic group tasks, participating in creative teamwork involvements, and facilitating clear communication.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section reveal-on-scroll">
+        <h2 class="section-title">My Services</h2>
+        <div class="services-grid-themed">
+            
+            <!-- Service 1: Web Development -->
+            <div class="service-card-themed reveal-zoom-in">
+                <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
+                <h3>Web Development</h3>
+                <p>Designing and building fully responsive, interactive, and high-performance websites using HTML, CSS, and modern coding practices.</p>
+            </div>
+
+            <!-- Service 2: Full Stack Logic -->
+            <div class="service-card-themed reveal-zoom-in">
+                <div class="icon-box"><i class="fas fa-server"></i></div>
+                <h3>Full Stack Logic</h3>
+                <p>Developing robust application logic, server interactions, state management workflows, and handling backend schemas.</p>
+            </div>
+
+            <!-- Service 3: JavaScript Engineering -->
+            <div class="service-card-themed reveal-zoom-in">
+                <div class="icon-box"><i class="fab fa-js"></i></div>
+                <h3>JS Engineering</h3>
+                <p>Implementing custom DOM manipulations, event-driven interfaces, local database integrations, and complex frontend logic.</p>
+            </div>
+
+            <!-- Service 4: UI & UX Design -->
+            <div class="service-card-themed reveal-zoom-in">
+                <div class="icon-box"><i class="fas fa-palette"></i></div>
+                <h3>UI & UX Design</h3>
+                <p>Structuring clear client interfaces, clean layout layouts, visually striking dark schemes, and user-friendly elements.</p>
+            </div>
+
+            <!-- Service 5: Data & State Management -->
+            <div class="service-card-themed reveal-zoom-in">
+                <div class="icon-box"><i class="fas fa-database"></i></div>
+                <h3>Data Systems</h3>
+                <p>Structuring date arrays, local web databases, persistence states, and dynamic calculations for financial and appointment tools.</p>
+            </div>
+
+            <!-- Service 6: Team Collaboration -->
+            <div class="service-card-themed reveal-zoom-in">
+                <div class="icon-box"><i class="fas fa-users"></i></div>
+                <h3>Collaboration</h3>
+                <p>Excelling in teamwork dynamics, communication, organized problem solving, and group task delivery for production environments.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="projects" class="projects-section reveal-on-scroll">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card reveal-zoom-in">
+                <div class="project-visual item-todo">
+                    <div class="anim-todo-box">
+                        <div class="anim-line done"><span></span><i class="fas fa-check-circle"></i></div>
+                        <div class="anim-line"><span></span><i class="far fa-circle"></i></div>
+                        <div class="anim-line"><span></span><i class="far fa-circle"></i></div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>To-Do List App</h3>
+                    <p>A smart task management app supporting task addition, editing, inline deletion, and completion toggles. Integrates Local Storage to preserve items across browsing sessions.</p>
+                    <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Local Storage</span></div>
+                    <button class="btn-demo" data-project="todo"><i class="fas fa-play"></i> Try Live Demo</button>
+                </div>
+            </div>
+
+            <div class="project-card reveal-zoom-in">
+                <div class="project-visual item-dates">
+                    <div class="anim-calendar-box">
+                        <div class="cal-head"></div>
+                        <div class="cal-grid">
+                            <span></span><span class="active-date"></span><span></span>
+                            <span></span><span></span><span class="active-date"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Multiple Dates Tool</h3>
+                    <p>An interactive data management tool built for displaying and handling date-based timelines in clean, structured architectural layouts.</p>
+                    <div class="project-tags"><span>JavaScript</span><span>Data Layouts</span><span>UI Customization</span></div>
+                    <button class="btn-demo" data-project="dates"><i class="fas fa-play"></i> Try Live Demo</button>
+                </div>
+            </div>
+
+            <div class="project-card reveal-zoom-in">
+                <div class="project-visual item-doctor">
+                    <div class="anim-doc-box">
+                        <div class="doc-pulse"></div>
+                        <div class="slot-row"><span class="slot taken"></span><span class="slot select"></span></div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Doctors Appointment System</h3>
+                    <p>An intuitive booking interface incorporating dynamic slot selection matrices, automated scheduling rules, and an optimized user flow design.</p>
+                    <div class="project-tags"><span>Event Handling</span><span>User Flow</span><span>Scheduling</span></div>
+                    <button class="btn-demo" data-project="doctor"><i class="fas fa-play"></i> Try Live Demo</button>
+                </div>
+            </div>
+
+            <div class="project-card reveal-zoom-in">
+                <div class="project-visual item-budget">
+                    <div class="anim-budget-box">
+                        <div class="chart-bar bar-up"></div>
+                        <div class="chart-bar bar-down"></div>
+                        <div class="chart-bar bar-mid"></div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Struggle Financial Tracker</h3>
+                    <p>A lightweight financial tracker helping individuals organize monthly income flows, categorize expenses, and monitor basic financial statistics.</p>
+                    <div class="project-tags"><span>Data Tracking</span><span>Logic Engineering</span><span>CSS Charts</span></div>
+                    <button class="btn-demo" data-project="finance"><i class="fas fa-play"></i> Try Live Demo</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="education" class="exp-edu-section reveal-on-scroll">
+        <h2 class="section-title">Education & Certifications</h2>
+        <div class="timeline-container">
+            
+            <div class="timeline-block">
+                <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="timeline-content">
+                    <h3>Bachelor of Computer Science and Engineering</h3>
+                    <span class="timeline-place">NSHM Knowledge Campus, Durgapur</span>
+                    <span class="timeline-date">2023 - 2027</span>
+                    <p>Building strong academic roots in advanced computing algorithms, software engineering principles, and core full stack architectures.</p>
+                </div>
+            </div>
+
+            <div class="timeline-block">
+                <div class="timeline-icon"><i class="fas fa-school"></i></div>
+                <div class="timeline-content">
+                    <h3>Intermediate (Science Stream)</h3>
+                    <span class="timeline-place">De nobili School CMRI, Dhanbad</span>
+                    <span class="timeline-grade">Score: 89%</span>
+                    <p>Completed higher secondary education with a science focus, constructing an essential framework in mathematics and programming basics.</p>
+                </div>
+            </div>
+
+            <div class="timeline-block">
+                <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+                <div class="timeline-content">
+                    <h3>Full Stack Developer Intern</h3>
+                    <span class="timeline-place">Golden Wise Company</span>
+                    <span class="timeline-date">Recently Completed</span>
+                    <p>Gained operational enterprise experience, collaborated across real-world project specifications, and refined production-level code patterns.</p>
+                </div>
+            </div>
+
+            <div class="timeline-block">
+                <div class="timeline-icon"><i class="fas fa-certificate"></i></div>
+                <div class="timeline-content">
+                    <h3>Web Development Training</h3>
+                    <span class="timeline-place">Comprehensive Training Program</span>
+                    <p>Completed complete immersive training across HTML, CSS, and JavaScript with an explicit focus on adaptive responsive layout implementation and portfolio building.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section reveal-on-scroll">
+        <h2 class="section-title">Connect With Me</h2>
+        <p class="contact-subtitle">Feel free to reach out for any queries, collaborative development, or project work!</p>
+        
+        <div class="contact-grid">
+            <div class="contact-info-cards">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Durgapur, West Bengal, India</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Mail Me</h4>
+                        <p><a href="mailto:banerjeeshreya267@gmail.com">Banerjee,Shreya267@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <i class="fab fa-github"></i>
+                    <div>
+                        <h4>GitHub</h4>
+                        <p><a href="https://github.com/shreyabanerjee545" target="_blank">Shreya Banerjee (545)</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your Message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn block-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Shreya Banerjee. Built with precision and clean architecture.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/shreyabanerjee545" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:banerjeeshreya267@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Demo Modal -->
+    <div id="demo-modal" class="modal-overlay">
+        <div class="modal-container">
+            <button class="modal-close-btn" id="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h2 id="modal-title">Project Demo</h2>
+                <p id="modal-subtitle">Interactive playground</p>
+            </div>
+            <div class="modal-body">
+                
+                <!-- 1. To-Do App Widget -->
+                <div id="todo-widget" class="demo-widget todo-widget">
+                    <div class="input-row">
+                        <input type="text" id="todo-input" placeholder="What needs to be done?">
+                        <button id="todo-add-btn">Add Task</button>
+                    </div>
+                    <div class="todo-list-container" id="todo-list">
+                        <!-- Dynamic content -->
+                    </div>
+                </div>
+
+                <!-- 2. Multiple Dates Tool Widget -->
+                <div id="dates-widget" class="demo-widget dates-widget">
+                    <div class="picker-container">
+                        <div class="controls-row">
+                            <div class="input-field">
+                                <label for="date-select">Select Date</label>
+                                <input type="date" id="date-select">
+                            </div>
+                            <div class="input-field">
+                                <label for="delay-input">Shift/Delay (Days)</label>
+                                <input type="number" id="delay-input" value="0" placeholder="e.g. 5 or -3">
+                            </div>
+                        </div>
+                        <div class="btn-row">
+                            <button id="date-add-btn" class="add-date-btn"><i class="fas fa-plus"></i> Add to Timeline</button>
+                            <button id="date-shift-btn" class="shift-btn"><i class="fas fa-clock"></i> Apply Delay</button>
+                        </div>
+                    </div>
+                    <div class="dates-timeline">
+                        <table class="dates-table">
+                            <thead>
+                                <tr>
+                                    <th>Original Date</th>
+                                    <th>Adjusted Date</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="dates-list">
+                                <!-- Dynamic content -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 3. Appointment Booking Widget -->
+                <div id="doctor-widget" class="demo-widget appointment-widget">
+                    <div class="step-container">
+                        <div>
+                            <div class="slots-title">1. Select Appointment Type</div>
+                            <div class="services-grid">
+                                <div class="service-option selected" data-service="General Consultation">
+                                    <i class="fas fa-user-md"></i>
+                                    <h4>General</h4>
+                                </div>
+                                <div class="service-option" data-service="Full Stack Review">
+                                    <i class="fas fa-laptop-code"></i>
+                                    <h4>Code Review</h4>
+                                </div>
+                                <div class="service-option" data-service="Project Discussion">
+                                    <i class="fas fa-comments"></i>
+                                    <h4>Discussion</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slots-title">2. Select Date & Slot</div>
+                            <div class="form-group" style="margin-bottom: 12px;">
+                                <input type="date" id="appointment-date" style="width: 100%; padding: 10px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; color: #fff;">
+                            </div>
+                            <div class="slots-grid" id="slots-grid-container">
+                                <!-- Dynamic slots -->
+                            </div>
+                        </div>
+                        <div class="appointment-form">
+                            <input type="text" id="appointment-name" placeholder="Your Name" required>
+                            <input type="email" id="appointment-email" placeholder="Your Email" required>
+                            <button id="appointment-submit-btn" class="submit-btn">Book Appointment</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Struggle Financial Tracker Widget -->
+                <div id="finance-widget" class="demo-widget finance-widget">
+                    <div class="dashboard-row">
+                        <div class="finance-card balance">
+                            <h4>Current Balance</h4>
+                            <p id="fin-balance">$0.00</p>
+                        </div>
+                        <div class="finance-card income">
+                            <h4>Total Income</h4>
+                            <p id="fin-income">$0.00</p>
+                        </div>
+                        <div class="finance-card expense">
+                            <h4>Total Expenses</h4>
+                            <p id="fin-expense">$0.00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="finance-body">
+                        <div>
+                            <div class="finance-form">
+                                <input type="text" id="fin-desc" placeholder="Transaction description (e.g. Salary, Groceries)">
+                                <input type="number" id="fin-amount" placeholder="Amount ($)">
+                                <select id="fin-type">
+                                    <option value="income">Income (+)</option>
+                                    <option value="expense">Expense (-)</option>
+                                </select>
+                                <button id="fin-add-btn">Add Transaction</button>
+                            </div>
+                            <div class="finance-chart-container">
+                                <svg class="finance-chart-svg">
+                                    <circle class="finance-chart-bg" cx="30" cy="30" r="22"></circle>
+                                    <circle class="finance-chart-value" id="fin-chart" cx="30" cy="30" r="22" stroke-dasharray="0, 138"></circle>
+                                </svg>
+                                <div class="chart-info">
+                                    Savings Rate
+                                    <span id="fin-savings-pct">0%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="finance-history">
+                            <h4>Transaction Ledger</h4>
+                            <div class="tx-list" id="fin-tx-list">
+                                <!-- Dynamic tx entries -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
